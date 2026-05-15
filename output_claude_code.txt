@@ -1,0 +1,17 @@
+Etapa 1 — Stage1.java: FileChooser carga config, despliega solo celulares (círculos azules) sobre imagen de fondo,
+  menú Simulation inactivo.
+
+  Etapa 2 — Stage2.java: Agrega tags (naranja) y tablets (rectángulo verde). Play/Pause activan un Timeline que mueve
+  todos los dispositivos con rebote elástico en bordes.
+
+  Etapa 3 — Stage3.java: Incorpora ETNube. Celulares reportan posición cada 4s; tags cada 4s y tablets cada 5s emiten
+  radar animado (círculo 0→50px en 1s). Clic en cualquier dispositivo → menú contextual "Find My" → FindMyWindow
+  (datos estáticos al abrir).
+
+  Etapa 4 — Stage4.java: Todo lo anterior + SoundPlayer (pitido PCM sintético vía javax.sound.sampled, sin archivos
+  externos) en cada radar; FindMyWindow se auto-actualiza cada 1 segundo; Javadoc completo en Equipo, EloTelTag y
+  EloTelTagView.
+
+  ---
+  Para compilar: necesitas JavaFX SDK (descárgalo de gluonhq.com/products/javafx). Ajusta JAVAFX_PATH en cada makefile
+   y ejecuta make run desde cada carpeta de etapa.
